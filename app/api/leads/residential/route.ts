@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { validateResidentialLead } from '@/lib/validation';
-import { createResidentialLead } from '@/lib/leadRepository';
+import { appendResidentialLead } from '@/lib/googleSheets';
 import { verifyCsrfToken } from '@/lib/csrf';
 
 export async function POST(request: NextRequest) {
@@ -25,13 +25,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create lead in database
-    const lead = await createResidentialLead(body);
+    // Append lead to Google Sheets
+    const leadId = await appendResidentialLead(body);
 
     return NextResponse.json(
       {
         message: 'Lead received. A specialist will contact you soon.',
-        leadId: lead.id,
+        leadId,
       },
       { status: 201 }
     );

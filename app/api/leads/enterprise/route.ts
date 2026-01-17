@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { validateEnterpriseLead } from '@/lib/validation';
-import { createEnterpriseLead } from '@/lib/leadRepository';
+import { appendEnterpriseLead } from '@/lib/googleSheets';
 import { verifyCsrfToken } from '@/lib/csrf';
 
 export async function POST(request: NextRequest) {
@@ -25,13 +25,13 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Create lead in database
-    const lead = await createEnterpriseLead(body);
+    // Append lead to Google Sheets
+    const leadId = await appendEnterpriseLead(body);
 
     return NextResponse.json(
       {
         message: 'Project inquiry received. Our team will assess and coordinate with licensed specialists.',
-        leadId: lead.id,
+        leadId,
       },
       { status: 201 }
     );
