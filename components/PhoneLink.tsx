@@ -7,7 +7,7 @@ interface PhoneLinkProps {
 }
 
 // Phone number parts are separated to prevent simple regex scraping
-const PHONE_PARTS = ['737', '877', '0514'];
+const PHONE_PARTS = ['512', '418', '6881'];
 
 export function PhoneLink({ className }: PhoneLinkProps) {
   const [mounted, setMounted] = useState(false);
