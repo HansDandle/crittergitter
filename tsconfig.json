@@ -45,7 +45,6 @@
     "app/**/*",
     "components/**/*",
     "types/**/*",
-    "next-env.d.ts",
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts"
   ],
@@ -57,9 +56,7 @@
     "e2e",
     "jest.setup.ts",
     "config",
-    "lib/csrf.ts",
-    "lib/db.ts",
-    "lib/leadRepository.ts",
-    "lib/validation.ts"
+    "lib",
+    ".vercel"
   ]
 }
