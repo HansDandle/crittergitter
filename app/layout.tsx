@@ -39,10 +39,16 @@ export default function RootLayout({
                 <a href="/enterprise">Enterprise</a>
               </li>
               <li>
-                <a href="/about">About</a>
+                <a href="/services/bird-exclusion">Bird Exclusion</a>
               </li>
               <li>
-                <a href="/privacy">Privacy</a>
+                <a href="/services/rodent-exclusion">Rodent Exclusion</a>
+              </li>
+              <li>
+                <a href="/blog">Blog</a>
+              </li>
+              <li>
+                <a href="/about">About</a>
               </li>
             </ul>
           </div>
@@ -104,133 +110,6 @@ export default function RootLayout({
             </p>
           </div>
         </footer>
-
-        <style jsx>{`
-          .navigation {
-            background: var(--color-dark);
-            color: white;
-            padding: var(--spacing-md) 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-          }
-
-          .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 var(--spacing-xl);
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-          }
-
-          .logo {
-            font-size: var(--font-size-xl);
-            font-weight: 700;
-            color: white;
-            text-decoration: none;
-          }
-
-          .logo:hover {
-            color: #ddd;
-          }
-
-          .nav-links {
-            list-style: none;
-            display: flex;
-            gap: var(--spacing-lg);
-          }
-
-          .nav-links a {
-            color: white;
-            text-decoration: none;
-            transition: color var(--transition);
-          }
-
-          .nav-links a:hover {
-            color: #ddd;
-            text-decoration: underline;
-          }
-
-          .footer {
-            background: var(--color-dark);
-            color: #ccc;
-            padding: var(--spacing-2xl) var(--spacing-xl);
-            margin-top: var(--spacing-2xl);
-          }
-
-          .footer-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: var(--spacing-2xl);
-            margin-bottom: var(--spacing-2xl);
-          }
-
-          .footer-section h3,
-          .footer-section h4 {
-            color: white;
-            margin-bottom: var(--spacing-md);
-          }
-
-          .footer-section p {
-            margin-bottom: var(--spacing-sm);
-            font-size: 0.9rem;
-            line-height: 1.5;
-          }
-
-          .footer-section ul {
-            list-style: none;
-          }
-
-          .footer-section ul li {
-            margin-bottom: var(--spacing-sm);
-          }
-
-          .footer-section a {
-            color: #aaa;
-          }
-
-          .footer-section a:hover {
-            color: white;
-          }
-
-          .legal-notice {
-            background: rgba(255, 193, 7, 0.1);
-            padding: var(--spacing-md);
-            border-left: 3px solid #ffc107;
-            margin-top: var(--spacing-md);
-            font-size: 0.85rem;
-          }
-
-          .footer-bottom {
-            border-top: 1px solid #444;
-            padding-top: var(--spacing-lg);
-            text-align: center;
-            font-size: 0.9rem;
-          }
-
-          .disclaimer {
-            color: #999;
-            font-size: 0.8rem;
-            margin-top: var(--spacing-sm);
-          }
-
-          @media (max-width: 768px) {
-            .nav-container {
-              flex-direction: column;
-              gap: var(--spacing-lg);
-            }
-
-            .nav-links {
-              flex-direction: column;
-              gap: var(--spacing-md);
-              text-align: center;
-            }
-          }
-        `}</style>
       </body>
     </html>
   );

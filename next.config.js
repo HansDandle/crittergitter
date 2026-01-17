@@ -1,12 +1,5 @@
-import type { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
-  typescript: {
-    strict: true,
-  },
-  eslint: {
-    dirs: ['app', 'components', 'lib', 'server'],
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
   headers: async () => [
     {
       source: '/:path*',
@@ -39,4 +32,4 @@ const nextConfig: NextConfig = {
   ],
 };
 
-export default nextConfig;
+module.exports = nextConfig;

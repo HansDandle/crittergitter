@@ -3,18 +3,18 @@ import { ResidentialForm } from '@/components/ResidentialForm';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Request Wildlife Assessment | Critter Getter',
+  title: 'Animal Removal & Residential Wildlife Exclusion Assessment',
   description:
-    'Connect with licensed wildlife specialists for residential wildlife issues. Serving squirrels, raccoons, rats, bats, and more.',
+    'Assess residential animal removal and wildlife exclusion needs. Connect with licensed specialists for attic wildlife removal, rodent exclusion, humane animal control, and structural prevention.',
 };
 
 export default function ResidentialPage() {
   return (
     <main className="page-container">
       <div className="page-header">
-        <h1>Wildlife Issue Assessment</h1>
+        <h1>Residential Animal Removal & Exclusion Assessment</h1>
         <p>
-          We connect you with licensed professionals in your area to assess and address residential wildlife issues.
+          If you're experiencing wildlife in your home or on your property, we coordinate assessments with licensed animal removal and wildlife exclusion specialists. Describe your situation and we'll match you with qualified professionals to evaluate your property and discuss solutions.
         </p>
       </div>
 
@@ -24,35 +24,34 @@ export default function ResidentialPage() {
         </div>
 
         <aside className="info-panel">
-          <h2>Why Choose This Path?</h2>
+          <h2>What Specialists Assess</h2>
           <ul>
             <li>
-              <strong>Fast Assessment:</strong> Licensed specialists evaluate your specific situation.
+              <strong>Property Inspection:</strong> Identify entry points, evidence of infestation, and vulnerable areas.
             </li>
             <li>
-              <strong>Coordinated Solution:</strong> We connect you with qualified professionals in your area.
+              <strong>Risk Assessment:</strong> Understand health and safety impacts specific to your property.
             </li>
             <li>
-              <strong>Transparent Pricing:</strong> Get estimates before work begins.
+              <strong>Exclusion Planning:</strong> Develop a strategy to seal entry points and prevent future problems.
             </li>
             <li>
-              <strong>Prevention Focus:</strong> Specialists help identify and seal entry points.
+              <strong>Humane Solutions:</strong> Licensed specialists prioritize humane, long-term exclusion methods.
             </li>
           </ul>
 
-          <h3>Common Issues We Help With</h3>
+          <h3>Common Residential Issues</h3>
           <ul>
-            <li>Squirrels in attics and walls</li>
-            <li>Raccoons on roofs and decks</li>
-            <li>Rats in basements and crawl spaces</li>
-            <li>Bat exclusions and prevention</li>
-            <li>Other residential wildlife concerns</li>
+            <li>Attic wildlife removal (squirrels, raccoons, bats)</li>
+            <li>Rodent exclusion and prevention</li>
+            <li>Foundation and crawl space damage assessment</li>
+            <li>Humane animal control and exclusion</li>
+            <li>Entry point sealing and structural prevention</li>
           </ul>
 
           <div className="compliance-note">
             <p>
-              <strong>Note:</strong> All services are provided by independent, licensed professionals.
-              We do not perform services directly but coordinate assessments and specialist referrals.
+              <strong>Our Role:</strong> We coordinate with licensed, independent wildlife specialists. All animal removal, exclusion, and pest prevention services are provided by licensed professionals—not by us. Each specialist maintains their own licensing, insurance, and qualifications.
             </p>
           </div>
         </aside>

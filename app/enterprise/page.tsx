@@ -3,19 +3,18 @@ import { EnterpriseForm } from '@/components/EnterpriseForm';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Facility Assessment & Exclusion Services | Critter Getter',
+  title: 'Commercial Wildlife Exclusion & Facility Prevention Assessment',
   description:
-    'Enterprise wildlife exclusion and prevention coordination. We assess facilities and coordinate with licensed specialists for commercial, industrial, and food service properties.',
+    'Enterprise wildlife prevention and facility assessment coordination. We connect commercial, industrial, food service, and municipal facilities with licensed vertebrate pest management specialists for USDA/FDA compliant exclusion solutions.',
 };
 
 export default function EnterprisePage() {
   return (
     <main className="page-container">
       <div className="page-header">
-        <h1>Enterprise Facility Assessment</h1>
+        <h1>Commercial & Industrial Wildlife Exclusion Assessment</h1>
         <p>
-          We coordinate comprehensive wildlife exclusion and prevention projects with licensed specialists.
-          Our team assesses your facility and scopes work with qualified partners.
+          Facilities facing wildlife challenges need compliance-ready solutions. We coordinate comprehensive assessments with licensed vertebrate pest management specialists who understand USDA, FDA, and health code requirements. From warehouses and manufacturing to food service and municipal facilities, our network provides expert guidance on structural prevention, rodent exclusion, and bird control systems.
         </p>
       </div>
 
@@ -25,49 +24,46 @@ export default function EnterprisePage() {
         </div>
 
         <aside className="info-panel">
-          <h2>Our Assessment Process</h2>
+          <h2>Professional Assessment Process</h2>
           <ol>
             <li>
-              <strong>Facility Review:</strong> You provide details about your property and concerns.
+              <strong>Facility Intake:</strong> You provide property details, facility type, and specific wildlife or sanitation concerns.
             </li>
             <li>
-              <strong>Partner Coordination:</strong> We match you with licensed specialists suited to your needs.
+              <strong>Specialist Matching:</strong> We connect you with licensed vertebrate pest management professionals experienced with your facility type.
             </li>
             <li>
-              <strong>On-Site Assessment:</strong> Specialists conduct thorough evaluation.
+              <strong>Comprehensive Site Assessment:</strong> Specialist conducts detailed evaluation of structural vulnerabilities, entry points, and regulatory compliance needs.
             </li>
             <li>
-              <strong>Project Scope & Estimate:</strong> Licensed partner provides detailed proposal.
+              <strong>Scope & Estimate:</strong> Licensed partner provides detailed proposal including compliance implications and estimated costs.
             </li>
             <li>
-              <strong>Execution:</strong> Licensed partner executes work and provides verification.
+              <strong>Execution & Verification:</strong> Licensed professional implements exclusion work, provides documentation, and supports compliance verification.
             </li>
           </ol>
 
-          <h2>Facility Types Served</h2>
+          <h2>Facility Types & Services</h2>
           <ul>
-            <li>Commercial office and retail buildings</li>
-            <li>Industrial warehouses and manufacturing</li>
-            <li>Food service and restaurants</li>
-            <li>Healthcare facilities</li>
-            <li>Other specialized properties</li>
+            <li><strong>Warehouses & Manufacturing:</strong> Bird exclusion systems, rodent exclusion, perimeter hardening, dock door protection</li>
+            <li><strong>Food Service & Restaurants:</strong> Rodent exclusion, entry point sealing, HACCP compliance support</li>
+            <li><strong>Healthcare Facilities:</strong> Infection control assessment, exclusion planning, compliance documentation</li>
+            <li><strong>Commercial & Retail:</strong> Structural vulnerability assessment, prevention planning, tenant communication</li>
+            <li><strong>Municipal & Government:</strong> Infrastructure assessment, compliance-ready solutions, documentation</li>
           </ul>
 
-          <h2>Service Areas</h2>
+          <h2>Compliance-Ready Solutions</h2>
           <ul>
-            <li>Structural vulnerability assessment</li>
-            <li>Rodent prevention and exclusion</li>
-            <li>Bird control and deterrents</li>
-            <li>Perimeter hardening</li>
-            <li>Sanitation and risk assessment</li>
-            <li>Regulatory compliance support</li>
+            <li>USDA/FDA wildlife exclusion requirements</li>
+            <li>Health code violation prevention</li>
+            <li>HACCP pest management support</li>
+            <li>Documentation and verification services</li>
+            <li>Risk and sanitation assessment reporting</li>
           </ul>
 
           <div className="compliance-note">
             <p>
-              <strong>Important:</strong> We do not perform services directly. All work is executed by
-              independent, licensed wildlife control specialists. Our role is assessment coordination and
-              specialist referral.
+              <strong>Critical Disclosure:</strong> We are a coordination platform only. All wildlife exclusion, vertebrate pest management, facility assessment, and prevention services are delivered by independent, licensed wildlife control specialists. We do not perform services directly. Each licensed partner maintains their own professional licensing, insurance, and regulatory compliance.
             </p>
           </div>
         </aside>

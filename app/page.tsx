@@ -3,9 +3,9 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Critter Getter - Wildlife Exclusion Referrals',
+  title: 'Wildlife Exclusion & Pest Prevention | Professional Network',
   description:
-    'Connect with licensed wildlife and varmint exclusion specialists. We coordinate assessments and specialist referrals for residential and enterprise properties.',
+    'Connect with licensed wildlife exclusion specialists and vertebrate pest management professionals. Assessment coordination and specialist referrals for residential and commercial properties.',
 };
 
 export default function HomePage() {
@@ -13,10 +13,9 @@ export default function HomePage() {
     <>
       <header className="hero">
         <div className="hero-content">
-          <h1>Professional Wildlife Exclusion Coordination</h1>
+          <h1>Wildlife Exclusion & Nuisance Wildlife Control</h1>
           <p>
-            Connect with licensed specialists to assess and resolve your wildlife issues. Whether residential or
-            enterprise, we coordinate solutions with qualified professionals in your area.
+            We connect property owners with our network of licensed, independent wildlife exclusion and vertebrate pest management specialists. From residential animal removal to commercial facility prevention and bird control systems, we coordinate comprehensive assessments and professional solutions.
           </p>
           <div className="hero-cta">
             <Link href="/residential" className="btn btn-primary btn-lg">
@@ -31,10 +30,9 @@ export default function HomePage() {
 
       <main className="page-container">
         <section className="how-it-works">
-          <h2>How It Works</h2>
+          <h2>How Wildlife Exclusion Coordination Works</h2>
           <p>
-            Critter Getter is a referral platform connecting property owners with licensed, independent
-            wildlife exclusion specialists.
+            Our platform connects property owners with licensed, independent wildlife exclusion and nuisance wildlife control specialists. We facilitate assessments, coordinate with professionals, and manage the referral process.
           </p>
           <div className="steps">
             <div className="step">
@@ -61,65 +59,62 @@ export default function HomePage() {
         </section>
 
         <section className="service-areas">
-          <h2>What We Help With</h2>
+          <h2>Wildlife Exclusion & Prevention Services</h2>
           <div className="service-grid">
             <div className="service-card">
-              <h3>🏠 Residential</h3>
+              <h3>Residential Exclusion</h3>
               <ul>
-                <li>Squirrels in attics</li>
-                <li>Raccoon problems</li>
-                <li>Rat and rodent issues</li>
-                <li>Bat exclusion</li>
-                <li>Other wildlife concerns</li>
+                <li>Animal removal and exclusion</li>
+                <li>Attic wildlife removal</li>
+                <li>Rodent exclusion systems</li>
+                <li>Humane bat exclusion</li>
+                <li>Entry point sealing</li>
               </ul>
             </div>
             <div className="service-card">
-              <h3>🏢 Commercial & Industrial</h3>
+              <h3>Commercial & Industrial Prevention</h3>
               <ul>
-                <li>Facility vulnerability assessments</li>
-                <li>Rodent prevention programs</li>
-                <li>Perimeter hardening</li>
-                <li>Regulatory compliance support</li>
-                <li>Risk and sanitation assessment</li>
+                <li>Structural vulnerability assessment</li>
+                <li>Bird exclusion systems for warehouses</li>
+                <li>Industrial rodent exclusion</li>
+                <li>USDA/FDA compliance support</li>
+                <li>Facility wildlife prevention programs</li>
               </ul>
             </div>
           </div>
         </section>
 
         <section className="why-choose">
-          <h2>Why Choose Critter Getter</h2>
+          <h2>Why Our Network Matters</h2>
           <ul className="features">
             <li>
-              <strong>Licensed Professionals:</strong> All services delivered by independently licensed,
-              insured specialists.
+              <strong>Licensed Specialist Network:</strong> We connect you only with independently licensed, insured wildlife exclusion and pest management professionals.
             </li>
             <li>
-              <strong>Transparent Process:</strong> We clearly communicate that specialists are independent
-              and licensed.
+              <strong>Compliance & Transparency:</strong> We clearly communicate our role as a coordination platform connecting you with licensed operators—never as direct service providers.
             </li>
             <li>
-              <strong>Local Expertise:</strong> We connect you with specialists familiar with your region's
-              specific wildlife challenges.
+              <strong>Regional Expertise:</strong> Specialists in our network understand local wildlife challenges, building codes, and regulatory requirements.
             </li>
             <li>
-              <strong>Education-Focused:</strong> Specialists help identify root causes and prevention opportunities.
+              <strong>Prevention-Focused:</strong> Our partners help identify entry points, seal vulnerabilities, and implement long-term exclusion solutions.
             </li>
             <li>
-              <strong>Compliance-Ready:</strong> Enterprise clients benefit from risk and compliance-aware assessment.
+              <strong>Regulatory Support:</strong> For commercial clients, specialists provide USDA/FDA compliance assessment and documentation.
             </li>
           </ul>
         </section>
 
         <section className="compliance-statement">
-          <h2>Important Legal Information</h2>
+          <h2>Regulatory Compliance & Disclaimer</h2>
           <p>
-            <strong>Critter Getter is not a licensed pest or wildlife control operator.</strong> We are a referral
-            and coordination platform only. All services are provided by independent, licensed professionals. We do
-            not perform wildlife removal, exclusion, control, or extermination services directly.
+            <strong>Important:</strong> We are a coordination and referral platform only—not a licensed wildlife control or pest management operator. We do not perform wildlife removal, exclusion, trapping, control, or prevention services. We do not handle, transport, or deal with animals.
           </p>
           <p>
-            When you submit an inquiry, you authorize us to coordinate with licensed specialists in your area. Learn
-            more about how we operate: <Link href="/about">About Us</Link> | <Link href="/privacy">Privacy Policy</Link>
+            <strong>Licensed Professionals Only:</strong> All wildlife exclusion, animal removal, and pest prevention services are provided exclusively by independent, licensed wildlife control specialists and vertebrate pest management professionals in our network. Each licensed partner maintains their own insurance and licensure.
+          </p>
+          <p>
+            When you submit an assessment request, we coordinate with qualified specialists to facilitate referrals. Specialists will contact you directly to discuss your specific situation, scope work, and provide estimates. Learn more: <Link href="/about">About Our Service Model</Link> | <Link href="/privacy">Privacy Policy</Link>
           </p>
         </section>
 
