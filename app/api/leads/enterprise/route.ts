@@ -1,19 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { validateEnterpriseLead } from '@/lib/validation';
 import { appendEnterpriseLead } from '@/lib/googleSheets';
-import { verifyCsrfToken } from '@/lib/csrf';
 
 export async function POST(request: NextRequest) {
   try {
-    // Verify CSRF token
-    const csrfToken = request.headers.get('x-csrf-token');
-    if (!csrfToken || !verifyCsrfToken(csrfToken)) {
-      return NextResponse.json(
-        { error: 'Invalid CSRF token' },
-        { status: 403 }
-      );
-    }
-
     const body = await request.json();
 
     // Validate input
@@ -37,8 +27,9 @@ export async function POST(request: NextRequest) {
     );
   } catch (error) {
     console.error('Error creating enterprise lead:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error';
     return NextResponse.json(
-      { error: 'Failed to process inquiry' },
+      { error: 'Failed to process inquiry', details: errorMessage },
       { status: 500 }
     );
   }

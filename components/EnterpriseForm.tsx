@@ -147,7 +147,6 @@ export const EnterpriseForm: React.FC<EnterpriseFormProps> = ({ onSuccess }) => 
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
-          'X-CSRF-Token': await getCsrfToken(),
         },
         body: JSON.stringify(submitData),
       });
@@ -374,9 +373,3 @@ export const EnterpriseForm: React.FC<EnterpriseFormProps> = ({ onSuccess }) => 
     </form>
   );
 };
-
-async function getCsrfToken(): Promise<string> {
-  const response = await fetch('/api/csrf-token');
-  const data = await response.json();
-  return data.token;
-}
