@@ -105,16 +105,13 @@ export default function HomePage() {
               <strong>Licensed Specialist Network:</strong> We connect you only with independently licensed, insured wildlife exclusion and pest management professionals.
             </li>
             <li>
-              <strong>Compliance & Transparency:</strong> We clearly communicate our role as a coordination platform connecting you with licensed operators—never as direct service providers.
-            </li>
-            <li>
               <strong>Regional Expertise:</strong> Specialists in our network understand local wildlife challenges, building codes, and regulatory requirements.
             </li>
             <li>
               <strong>Prevention-Focused:</strong> Our partners help identify entry points, seal vulnerabilities, and implement long-term exclusion solutions.
             </li>
             <li>
-              <strong>Regulatory Support:</strong> For commercial clients, specialists provide USDA/FDA compliance assessment and documentation.
+              <strong>Regulatory Support:</strong> For commercial clients, specialists provide all necessary compliance assessment and documentation.
             </li>
           </ul>
         </section>
