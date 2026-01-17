@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import './globals.css';
 import { PhoneLink } from '@/components/PhoneLink';
+import { MobileNav } from '@/components/MobileNav';
 
 export const metadata: Metadata = {
   title: 'SiteShield - Wildlife Exclusion Referrals',
@@ -26,36 +27,7 @@ export default function RootLayout({
         <meta name="theme-color" content="#2c5f2d" />
       </head>
       <body>
-        <nav className="navigation">
-          <div className="nav-container">
-            <a href="/" className="logo">
-              🛡️ SiteShield
-            </a>
-            <ul className="nav-links">
-              <li>
-                <a href="/residential">Residential</a>
-              </li>
-              <li>
-                <a href="/enterprise">Enterprise</a>
-              </li>
-              <li>
-                <a href="/services/warehouse-bird-control">Warehouse Bird Control</a>
-              </li>
-              <li>
-                <a href="/services/substation-bird-control">Substation Control</a>
-              </li>
-              <li>
-                <a href="/services/compliance-pest-management">Compliance</a>
-              </li>
-              <li>
-                <a href="/blog">Blog</a>
-              </li>
-              <li>
-                <a href="/about">About</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <MobileNav />
 
         {children}
 

@@ -870,6 +870,35 @@ legend {
   text-decoration: none;
 }
 
+/* Hamburger Menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.hamburger-line {
+  display: block;
+  width: 24px;
+  height: 3px;
+  background-color: white;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.hamburger:hover .hamburger-line {
+  background-color: var(--color-primary);
+}
+
 /* Footer */
 .footer {
   background: var(--color-slate-900);
@@ -945,14 +974,33 @@ legend {
 
 @media (max-width: 768px) {
   .nav-container {
-    flex-direction: column;
-    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 0;
+  }
+
+  .hamburger {
+    display: flex;
   }
 
   .nav-links {
+    display: none;
     flex-direction: column;
     gap: var(--spacing-md);
     text-align: center;
+    width: 100%;
+    padding: var(--spacing-lg) 0;
+    background: var(--color-slate-900);
+    order: 3;
+  }
+
+  .nav-links.nav-open {
+    display: flex;
+  }
+
+  .nav-links a {
+    padding: var(--spacing-sm) 0;
+    font-size: var(--font-size-base);
   }
 }
 
