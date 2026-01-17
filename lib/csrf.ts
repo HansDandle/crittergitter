@@ -1,4 +1,3 @@
-import { Request, Response, NextFunction } from 'express';
 import crypto from 'crypto';
 
 const csrfTokens = new Map<string, { token: string; expiresAt: number }>();
@@ -24,15 +23,4 @@ export function verifyCsrfToken(token: string): boolean {
   }
   csrfTokens.delete(token); // One-time use
   return true;
-}
-
-export function csrfMiddleware(req: Request, res: Response, next: NextFunction): void {
-  if (req.method === 'POST' || req.method === 'PUT' || req.method === 'DELETE') {
-    const token = req.headers['x-csrf-token'] as string;
-    if (!token || !verifyCsrfToken(token)) {
-      res.status(403).json({ error: 'Invalid CSRF token' });
-      return;
-    }
-  }
-  next();
 }
