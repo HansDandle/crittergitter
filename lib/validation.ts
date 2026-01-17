@@ -33,7 +33,7 @@ export const enterpriseLeadSchema = z.object({
   facilityType: z.enum(['commercial', 'industrial', 'food_service', 'healthcare', 'other']),
   squareFootage: z.number().min(0).optional(),
   issues: z.array(z.string()).min(1, 'Select at least one issue'),
-  projectScope: z.string().min(20, 'Provide detailed project scope').max(2000),
+  projectScope: z.string().min(10, 'Please describe the project (10+ characters)').max(2000),
   timeline: z.string().min(1, 'Timeline is required').max(100),
   preferredContact: z.enum(['phone', 'email']),
 });

@@ -133,7 +133,7 @@ export const ResidentialForm: React.FC<ResidentialFormProps> = ({ onSuccess }) =
           setMessage('Error submitting form. Please try again.');
         }
       } else {
-        setMessage('Thank you! A specialist will contact you soon.');
+        setMessage('Submitted - Thank you, a trusted professional will be in contact soon!');
         setFormData({
           firstName: '',
           lastName: '',

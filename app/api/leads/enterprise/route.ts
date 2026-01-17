@@ -5,10 +5,12 @@ import { appendEnterpriseLead } from '@/lib/googleSheets';
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
+    console.log('Enterprise lead received:', JSON.stringify(body, null, 2));
 
     // Validate input
     const validation = validateEnterpriseLead(body);
     if (!validation.valid) {
+      console.log('Validation failed:', validation.errors);
       return NextResponse.json(
         { errors: validation.errors },
         { status: 400 }

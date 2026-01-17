@@ -160,7 +160,7 @@ export const EnterpriseForm: React.FC<EnterpriseFormProps> = ({ onSuccess }) => 
           setMessage('Error submitting form. Please try again.');
         }
       } else {
-        setMessage('Thank you! Our team will assess your facility and coordinate with specialists.');
+        setMessage('Submitted - Thank you, a trusted professional will be in contact soon!');
         setFormData({
           companyName: '',
           contactFirstName: '',
