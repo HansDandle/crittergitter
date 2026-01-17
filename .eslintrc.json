@@ -4,8 +4,10 @@ module.exports = {
     'react-hooks/rules-of-hooks': 'error',
     'react-hooks/exhaustive-deps': 'warn',
     '@next/next/no-html-link-for-pages': 'off',
+    '@typescript-eslint/no-unused-vars': 'error',
     'no-var': 'error',
     'prefer-const': 'error',
     'prefer-arrow-callback': 'warn',
+    'no-console': ['warn', { allow: ['warn', 'error'] }],
   },
 };

@@ -1,0 +1,26 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+echo "🔍 Running pre-commit checks..."
+echo ""
+echo "📝 Linting code..."
+pnpm lint
+
+if [ $? -ne 0 ]; then
+  echo "❌ ESLint failed. Run 'pnpm lint:fix' to auto-fix issues."
+  exit 1
+fi
+
+echo "✓ Linting passed"
+echo ""
+echo "📦 Type checking..."
+pnpm type-check
+
+if [ $? -ne 0 ]; then
+  echo "❌ TypeScript errors found. Fix them before committing."
+  exit 1
+fi
+
+echo "✓ Type checking passed"
+echo ""
+echo "✅ All pre-commit checks passed!"
