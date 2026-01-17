@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Terms of Service | Critter Getter',
-  description: 'Terms of Service for Critter Getter wildlife exclusion referral platform.',
+  title: 'Terms of Service | SiteShield',
+  description: 'Terms of Service for SiteShield wildlife exclusion referral platform.',
 };
 
 export default function TermsPage() {
@@ -19,12 +19,12 @@ export default function TermsPage() {
         <article>
           <h2>1. Acceptance of Terms</h2>
           <p>
-            By accessing and using Critter Getter (the "Platform"), you agree to be bound by these Terms of Service.
+            By accessing and using SiteShield (the "Platform"), you agree to be bound by these Terms of Service.
             If you do not agree to any part of these terms, do not use the Platform.
           </p>
 
           <h2>2. Platform Description</h2>
-          <p>Critter Getter is a <strong>referral platform only</strong>. We:</p>
+          <p>SiteShield is a <strong>referral platform only</strong>. We:</p>
           <ul>
             <li>Collect information about wildlife issues</li>
             <li>Connect you with independent, licensed wildlife specialists</li>
@@ -33,7 +33,7 @@ export default function TermsPage() {
 
           <h2>3. We Are Not a Licensed Operator</h2>
           <p>
-            <strong>Critical Disclosure</strong>: Critter Getter is <strong>NOT</strong> a licensed pest control
+            <strong>Critical Disclosure</strong>: SiteShield is <strong>NOT</strong> a licensed pest control
             operator, wildlife removal service, or animal control agency.
           </p>
           <ul>
@@ -54,7 +54,7 @@ export default function TermsPage() {
 
           <h3>No Endorsement or Guarantee</h3>
           <ul>
-            <li>Partnership with Critter Getter does not imply endorsement of quality</li>
+            <li>Partnership with SiteShield does not imply endorsement of quality</li>
             <li>We do not guarantee specialist availability, response time, or service quality</li>
             <li>You are responsible for verifying specialist credentials and qualifications</li>
           </ul>
@@ -79,7 +79,7 @@ export default function TermsPage() {
 
           <h3>No Direct Services</h3>
           <p>
-            Critter Getter provides <strong>no services</strong> related to wildlife control, removal, exclusion, or
+            SiteShield provides <strong>no services</strong> related to wildlife control, removal, exclusion, or
             treatment. Therefore, we assume no liability for:
           </p>
           <ul>
@@ -102,13 +102,13 @@ export default function TermsPage() {
 
           <h3>Liability Cap</h3>
           <p>
-            TO THE FULLEST EXTENT PERMITTED BY LAW, CRITTER GETTER SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+            TO THE FULLEST EXTENT PERMITTED BY LAW, SITESHIELD SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
             CONSEQUENTIAL, OR PUNITIVE DAMAGES, INCLUDING LOST PROFITS OR DATA.
           </p>
           <p>Our total liability shall not exceed the amount you paid us (if any).</p>
 
           <h2>7. Indemnification</h2>
-          <p>You agree to indemnify and hold harmless Critter Getter from any claims, damages, or costs arising from:</p>
+          <p>You agree to indemnify and hold harmless SiteShield from any claims, damages, or costs arising from:</p>
           <ul>
             <li>Your use of the platform</li>
             <li>Breach of these terms</li>
@@ -118,7 +118,7 @@ export default function TermsPage() {
 
           <h2>8. Intellectual Property</h2>
           <ul>
-            <li>All content on the Platform is owned by or licensed to Critter Getter</li>
+            <li>All content on the Platform is owned by or licensed to SiteShield</li>
             <li>You may not reproduce, modify, or distribute content without permission</li>
             <li>Specialist information remains the property of individual specialists</li>
           </ul>
@@ -137,7 +137,7 @@ export default function TermsPage() {
           <h2>10. User Content</h2>
           <p>By submitting information through the Platform:</p>
           <ul>
-            <li>You grant Critter Getter a license to use, store, and share your information with specialist partners</li>
+            <li>You grant SiteShield a license to use, store, and share your information with specialist partners</li>
             <li>You represent that you own or have rights to the information you provide</li>
             <li>You agree that information may be used to improve our matching process</li>
           </ul>
@@ -171,14 +171,14 @@ export default function TermsPage() {
           <h2>14. Contact</h2>
           <p>For questions regarding these Terms of Service:</p>
           <ul>
-            <li>Email: legal@crittergetter.com</li>
+            <li>Email: legal@siteshield.com</li>
             <li>Mailing Address: [Your Address]</li>
           </ul>
 
           <div className="compliance-note">
             <p>
-              <strong>ACKNOWLEDGMENT</strong>: By using Critter Getter, you acknowledge that you have read and
-              understood these Terms of Service, and that you understand Critter Getter does not perform services
+              <strong>ACKNOWLEDGMENT</strong>: By using SiteShield, you acknowledge that you have read and
+              understood these Terms of Service, and that you understand SiteShield does not perform services
               directly but operates exclusively as a referral platform connecting you with independent, licensed
               specialists.
             </p>

@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -19,6 +20,30 @@ export default function AtticWildlifeRemovalPage() {
       </div>
 
       <section className="content-section">
+        <div className="image-gallery" style={{ margin: '2rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+          <Image
+            src="/images/chimney_gutter_squirrel.jpg"
+            alt="Squirrel in chimney and gutter area"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/racoon-roof-fascia-medium.jpg"
+            alt="Raccoon damage to roof and fascia"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/bats.jpg"
+            alt="Bat exclusion and assessment"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
+
         <div className="info-panel">
           <h2>Common Attic Wildlife Problems</h2>
           <ul>

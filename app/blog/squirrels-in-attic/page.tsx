@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -24,6 +25,14 @@ export default function SquirrelsArticle() {
             You hear scratching in your attic at night. You call someone to trap the squirrel. It stops for a few weeks. Then the noise comes back.
             This isn't a coincidence. It's how trapping-only approaches fail against squirrels.
           </p>
+
+          <Image
+            src="/images/chimney_gutter_squirrel.jpg"
+            alt="Squirrel in attic and chimney area"
+            width={600}
+            height={400}
+            style={{ width: '100%', height: 'auto', margin: '1.5rem 0', borderRadius: '0.375rem' }}
+          />
 
           <h2>The Trapping Trap</h2>
           <p>

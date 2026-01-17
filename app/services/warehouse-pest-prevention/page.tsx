@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -19,6 +20,30 @@ export default function WarehousePestPreventionPage() {
       </div>
 
       <section className="content-section">
+        <div className="image-gallery" style={{ margin: '2rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+          <Image
+            src="/images/birdnets-substation.jpg"
+            alt="Bird exclusion systems for industrial facilities"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/birdnetting2.jpg"
+            alt="Warehouse bird netting installation"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/Pest-Proofing-Squirrel.jpg"
+            alt="Professional pest prevention and sealing"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
+
         <div className="info-panel">
           <h2>Why Warehouse Pest Prevention Matters</h2>
           <ul>

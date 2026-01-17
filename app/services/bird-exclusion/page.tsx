@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -19,6 +20,51 @@ export default function BirdExclusionPage() {
       </div>
 
       <section className="content-section">
+        <div className="image-gallery" style={{ margin: '2rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+          <Image
+            src="/images/birdnet.jpg"
+            alt="Bird netting on warehouse"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/bird-netting-under-canopy.webp"
+            alt="Bird exclusion netting under canopy structure"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/bird-net-eaves.jpg"
+            alt="Bird netting at eaves and roofline"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/birdnetting2.jpg"
+            alt="Bird exclusion system installation"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/birdnets-substation.jpg"
+            alt="Professional bird netting solution for industrial"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/birdnet3.webp"
+            alt="Commercial bird control netting system"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
+
         <div className="info-panel">
           <h2>Why Bird Exclusion Matters</h2>
           <ul>

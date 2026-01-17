@@ -3,7 +3,7 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'About Critter Getter | Wildlife Exclusion Referrals',
+  title: 'About SiteShield | Wildlife Exclusion Referrals',
   description: 'Learn about our referral platform connecting wildlife issues with licensed specialists.',
 };
 
@@ -11,138 +11,114 @@ export default function AboutPage() {
   return (
     <main className="page-container">
       <div className="page-header">
-        <h1>About Critter Getter</h1>
+        <h1>About SiteShield</h1>
         <p>Connecting wildlife issues with licensed professionals since 2025.</p>
       </div>
 
       <section className="content-section">
         <article>
-          <h2>Our Mission</h2>
+          <h2>What We Do</h2>
           <p>
-            To provide a trusted intake and referral platform connecting homeowners and businesses with
-            licensed, qualified wildlife exclusion specialists. We focus on education, assessment coordination,
-            and specialist matching—never claiming to perform services ourselves.
+            SiteShield helps property owners and facility managers address wildlife and pest intrusion issues by connecting them with qualified, licensed wildlife exclusion professionals.
+          </p>
+          <p>
+            We focus on intake, education, and coordination so that the right specialist handles the work from the start.
           </p>
 
-          <h2>How We Work</h2>
+          <h2>How SiteShield Works</h2>
+          <div className="steps" style={{ marginBottom: '2rem' }}>
+            <div className="step">
+              <h3>You tell us about the situation</h3>
+              <p>We collect details about the property, the issue, and any known risks or constraints.</p>
+            </div>
+            <div className="step">
+              <h3>We coordinate the next step</h3>
+              <p>Based on your needs and location, we connect you with an appropriate licensed wildlife exclusion specialist.</p>
+            </div>
+            <div className="step">
+              <h3>The specialist performs the work</h3>
+              <p>All inspections, exclusion, removal, and remediation services are performed by independent, licensed professionals.</p>
+            </div>
+          </div>
           <p>
-            Critter Getter operates as a lead generation and referral platform. Here's what that means:
+            <strong>SiteShield does not perform wildlife control services directly. Our role is to ensure you are connected with the right expertise efficiently and transparently.</strong>
           </p>
 
+          <h2>Who We Serve</h2>
+
+          <h3>Residential Properties</h3>
+          <p>
+            For homeowners dealing with wildlife intrusion such as squirrels, raccoons, rodents, bats, or birds, we help coordinate assessments and connect you with licensed specialists who can evaluate damage, recommend solutions, and implement exclusion and prevention measures.
+          </p>
+
+          <h3>Commercial and Enterprise Facilities</h3>
+          <p>
+            We work with warehouses, industrial sites, food service operations, healthcare facilities, utilities, and other commercial properties that require coordinated, compliance-aware wildlife exclusion solutions.
+          </p>
+          <p>This includes support for:</p>
           <ul>
-            <li>
-              <strong>We Are Not a Licensed Operator:</strong> We do not perform wildlife control, pest management,
-              or exclusion services. We are not licensed to do so.
-            </li>
-            <li>
-              <strong>We Assess and Coordinate:</strong> We gather information about your wildlife situation through
-              our intake process, then coordinate with independent, licensed specialists.
-            </li>
-            <li>
-              <strong>We Connect You with Licensed Professionals:</strong> Our network consists of independently
-              licensed, insured wildlife exclusion specialists who perform all services.
-            </li>
-            <li>
-              <strong>We Support Your Process:</strong> We help ensure you're connected with qualified professionals
-              suited to your specific needs and location.
-            </li>
+            <li>Facility assessments</li>
+            <li>Risk identification</li>
+            <li>Project scoping and coordination</li>
+            <li>Multi-building or ongoing exclusion needs</li>
           </ul>
 
-          <h2>Our Expertise Includes</h2>
+          <h2>Why SiteShield</h2>
+          <div className="service-grid" style={{ gridTemplateColumns: 'repeat(2, 1fr)' }}>
+            <div className="service-card" style={{ border: 'none', boxShadow: 'none', padding: 'var(--spacing-lg)' }}>
+              <h3 style={{ marginTop: 0 }}>Clarity and transparency</h3>
+              <p>You always know who is providing the service and who is responsible for the work.</p>
+            </div>
+            <div className="service-card" style={{ border: 'none', boxShadow: 'none', padding: 'var(--spacing-lg)' }}>
+              <h3 style={{ marginTop: 0 }}>Licensed specialists</h3>
+              <p>All services are performed by independently licensed and insured professionals.</p>
+            </div>
+            <div className="service-card" style={{ border: 'none', boxShadow: 'none', padding: 'var(--spacing-lg)' }}>
+              <h3 style={{ marginTop: 0 }}>Local knowledge</h3>
+              <p>We connect you with specialists who understand regional wildlife patterns and regulations.</p>
+            </div>
+            <div className="service-card" style={{ border: 'none', boxShadow: 'none', padding: 'var(--spacing-lg)' }}>
+              <h3 style={{ marginTop: 0 }}>Commercial ready approach</h3>
+              <p>We are built to support both single property needs and complex commercial environments.</p>
+            </div>
+          </div>
 
-          <h3>Residential Services Coordination</h3>
+          <h2>Our Role and Responsibilities</h2>
           <p>
-            For homeowners experiencing wildlife issues with squirrels, raccoons, rats, bats, and other animals,
-            we connect you with licensed specialists who can assess damage, perform safe exclusion, and provide
-            prevention recommendations.
+            SiteShield operates as an intake and referral platform. We do not hold pest control or wildlife removal licenses and do not perform regulated services ourselves.
           </p>
-
-          <h3>Enterprise & Commercial Projects</h3>
-          <p>
-            For commercial facilities, industrial properties, food service establishments, and healthcare
-            facilities, we coordinate comprehensive exclusion and prevention project planning with licensed
-            specialists, including facility assessments, risk evaluation, and scope development.
-          </p>
-
-          <h2>What Sets Us Apart</h2>
+          <p>Our responsibility is to:</p>
           <ul>
-            <li>
-              <strong>Compliance Focus:</strong> We clearly communicate that services are performed by licensed
-              partners, never creating confusion about who provides services.
-            </li>
-            <li>
-              <strong>Transparent Process:</strong> You understand at every step that specialists are independent
-              and licensed.
-            </li>
-            <li>
-              <strong>Specialist Network:</strong> We work with carefully selected licensed professionals in
-              wildlife exclusion and control.
-            </li>
-            <li>
-              <strong>Local Expertise:</strong> We connect you with local specialists who understand your region's
-              specific wildlife challenges.
-            </li>
+            <li>Collect and organize intake information</li>
+            <li>Coordinate connections with licensed specialists</li>
+            <li>Facilitate communication during the initial engagement phase</li>
+          </ul>
+          <p>
+            <strong>All services are contracted and performed directly between you and the licensed specialist.</strong>
+          </p>
+
+          <h2>Pricing and Referrals</h2>
+          <ul>
+            <li>There is no cost to submit an inquiry through SiteShield.</li>
+            <li>You pay only the licensed specialist for services performed. SiteShield may receive a referral fee from participating specialists for qualified leads.</li>
           </ul>
 
-          <h2>Legal & Licensing</h2>
+          <h2>Privacy and Data Use</h2>
           <p>
-            Critter Getter (the website and referral platform) is <strong>not</strong> a licensed pest or wildlife
-            control operator. We do not hold any licenses related to pest management, wildlife removal, or similar
-            services. All services are provided exclusively by independent, licensed professionals within our
-            partner network.
+            Your information is used solely to assess your needs, coordinate specialist connections, and facilitate communication. We do not sell consumer data outside our specialist network. For full details, please review our <Link href="/privacy">Privacy Policy</Link>.
           </p>
 
+          <h2>Ready to Get Started?</h2>
           <p>
-            When you submit an inquiry through our platform, your information is used only to:
-          </p>
-          <ul>
-            <li>Assess your situation for appropriate specialist matching</li>
-            <li>Coordinate with licensed partners in your area</li>
-            <li>Facilitate communication between you and specialist partners</li>
-          </ul>
-
-          <h2>Referral Model</h2>
-          <p>
-            Critter Getter operates on a referral revenue model. Licensed specialists in our network pay us
-            referral fees for qualified leads we provide. This means:
-          </p>
-          <ul>
-            <li>
-              <strong>No Direct Charges to You:</strong> You do not pay us to submit your information. You only
-              pay the licensed specialist for services rendered.
-            </li>
-            <li>
-              <strong>Aligned Incentives:</strong> We benefit when we connect you with quality specialists, so we're
-              motivated to make good matches.
-            </li>
-            <li>
-              <strong>Specialist Accountability:</strong> All specialists are independently licensed and insured,
-              holding their own professional liability.
-            </li>
-          </ul>
-
-          <h2>Privacy & Data Protection</h2>
-          <p>
-            Your information is handled with care and used only for the purposes described above. We do not sell
-            your data to third parties beyond our licensed specialist network. For full details, please review our{' '}
-            <Link href="/privacy">Privacy Policy</Link>.
-          </p>
-
-          <h2>Questions?</h2>
-          <p>
-            If you have questions about how we operate, our licensing, or how we match specialists to leads,
-            please don't hesitate to contact us. Transparency is fundamental to how we serve you.
+            Submit your information and we will coordinate the next step with a licensed wildlife exclusion professional.
           </p>
 
           <div className="cta-group">
-            <p>
-              Ready to get your situation assessed by a licensed professional?
-            </p>
-            <Link href="/residential" className="btn btn-primary">
-              Request a Residential Assessment
+            <Link href="/residential" className="btn btn-primary btn-lg">
+              Residential Assessment
             </Link>
-            <Link href="/enterprise" className="btn btn-primary">
-              Request a Facility Assessment
+            <Link href="/enterprise" className="btn btn-primary btn-lg">
+              Facility Assessment
             </Link>
           </div>
         </article>

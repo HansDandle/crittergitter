@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -25,6 +26,16 @@ export default function HomePage() {
               Enterprise Assessment
             </Link>
           </div>
+        </div>
+        <div style={{ marginTop: '2rem' }}>
+          <Image
+            src="/images/heronet.jpg"
+            alt="Professional bird netting and wildlife exclusion installation"
+            width={1200}
+            height={400}
+            priority
+            style={{ width: '100%', height: 'auto', borderRadius: '0.75rem' }}
+          />
         </div>
       </header>
 

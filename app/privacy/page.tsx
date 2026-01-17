@@ -3,8 +3,8 @@ import Link from 'next/link';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Critter Getter',
-  description: 'Privacy policy for Critter Getter wildlife exclusion referral platform.',
+  title: 'Privacy Policy | SiteShield',
+  description: 'Privacy policy for SiteShield wildlife exclusion referral platform.',
 };
 
 export default function PrivacyPage() {
@@ -19,7 +19,7 @@ export default function PrivacyPage() {
         <article>
           <h2>Overview</h2>
           <p>
-            Critter Getter ("we," "us," "our") operates a wildlife exclusion referral platform. This Privacy Policy
+            SiteShield ("we," "us," "our") operates a wildlife exclusion referral platform. This Privacy Policy
             explains how we collect, use, and protect your information.
           </p>
 
@@ -119,7 +119,7 @@ export default function PrivacyPage() {
             </li>
           </ul>
 
-          <p>To exercise these rights, contact us at privacy@crittergetter.com.</p>
+          <p>To exercise these rights, contact us at privacy@siteshield.com.</p>
 
           <h2>California Privacy Rights (CCPA)</h2>
           <p>California residents have additional rights:</p>
@@ -151,7 +151,7 @@ export default function PrivacyPage() {
           <h2>Contact Us</h2>
           <p>For privacy questions or to exercise your rights:</p>
           <ul>
-            <li>Email: privacy@crittergetter.com</li>
+            <li>Email: privacy@siteshield.com</li>
             <li>Mailing Address: [Your Address]</li>
           </ul>
 

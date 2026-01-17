@@ -3,7 +3,7 @@ import './globals.css';
 import React from 'react';
 
 export const metadata: Metadata = {
-  title: 'Critter Getter - Wildlife Exclusion Referrals',
+  title: 'SiteShield - Wildlife Exclusion Referrals',
   description: 'Connect with licensed wildlife and varmint exclusion specialists.',
   icons: {
     icon: '/favicon.ico',
@@ -21,7 +21,7 @@ export default function RootLayout({
         <meta charSet="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="description" content="Connect with licensed wildlife and varmint exclusion specialists." />
-        <meta property="og:title" content="Critter Getter - Wildlife Exclusion Referrals" />
+        <meta property="og:title" content="SiteShield - Wildlife Exclusion Referrals" />
         <meta property="og:description" content="Professional wildlife exclusion coordination with licensed specialists." />
         <meta name="theme-color" content="#2c5f2d" />
       </head>
@@ -29,7 +29,7 @@ export default function RootLayout({
         <nav className="navigation">
           <div className="nav-container">
             <a href="/" className="logo">
-              🦌 Critter Getter
+              🛡️ SiteShield
             </a>
             <ul className="nav-links">
               <li>
@@ -39,10 +39,13 @@ export default function RootLayout({
                 <a href="/enterprise">Enterprise</a>
               </li>
               <li>
-                <a href="/services/bird-exclusion">Bird Exclusion</a>
+                <a href="/services/warehouse-bird-control">Warehouse Bird Control</a>
               </li>
               <li>
-                <a href="/services/rodent-exclusion">Rodent Exclusion</a>
+                <a href="/services/substation-bird-control">Substation Control</a>
+              </li>
+              <li>
+                <a href="/services/compliance-pest-management">Compliance</a>
               </li>
               <li>
                 <a href="/blog">Blog</a>
@@ -59,7 +62,7 @@ export default function RootLayout({
         <footer className="footer">
           <div className="footer-container">
             <div className="footer-section">
-              <h3>Critter Getter</h3>
+              <h3>SiteShield</h3>
               <p>
                 Wildlife exclusion referral platform connecting property owners with licensed specialists.
               </p>
@@ -76,6 +79,9 @@ export default function RootLayout({
                 </li>
                 <li>
                   <a href="/enterprise">Enterprise Assessment</a>
+                </li>
+                <li>
+                  <a href="/service-areas">Service Areas</a>
                 </li>
                 <li>
                   <a href="/about">About Us</a>
@@ -97,15 +103,15 @@ export default function RootLayout({
 
             <div className="footer-section">
               <h4>Contact</h4>
-              <p>Email: info@crittergetter.com</p>
+              <p>Email: info@siteshield.com</p>
               <p>Phone: [Your Phone]</p>
             </div>
           </div>
 
           <div className="footer-bottom">
-            <p>&copy; 2025 Critter Getter. All rights reserved.</p>
+            <p>&copy; 2025 SiteShield. All rights reserved.</p>
             <p className="disclaimer">
-              Critter Getter is a referral platform connecting property owners with licensed wildlife specialists.
+              SiteShield is a referral platform connecting property owners with licensed wildlife specialists.
               We do not perform services directly.
             </p>
           </div>

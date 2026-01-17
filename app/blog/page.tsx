@@ -27,7 +27,7 @@ export default function BlogPage() {
     },
     {
       slug: 'rodent-exclusion-guide',
-      title: 'Rodent Exclusion: Why Trapping Alone Doesn't Work',
+      title: "Rodent Exclusion: Why Trapping Alone Doesn't Work",
       excerpt:
         'Traps and poison fail when rodents keep entering from outside. This guide explains why exclusion is the only permanent rodent solution.',
       date: 'January 5, 2026',

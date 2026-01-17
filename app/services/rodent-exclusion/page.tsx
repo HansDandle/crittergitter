@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import React from 'react';
 
 export const metadata: Metadata = {
@@ -19,6 +20,23 @@ export default function RodentExclusionPage() {
       </div>
 
       <section className="content-section">
+        <div className="image-gallery" style={{ margin: '2rem 0', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(250px, 1fr))', gap: '1rem' }}>
+          <Image
+            src="/images/Pest-Proofing-Squirrel.jpg"
+            alt="Professional pest proofing and sealing"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+          <Image
+            src="/images/cleaning.jpg"
+            alt="Contamination cleanup and remediation"
+            width={300}
+            height={200}
+            style={{ width: '100%', height: 'auto' }}
+          />
+        </div>
+
         <div className="info-panel">
           <h2>Rodent Problems & Solutions</h2>
           <ul>
