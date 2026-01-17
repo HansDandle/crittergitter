@@ -200,11 +200,22 @@ a:hover {
 .cta-phone {
   margin-top: var(--spacing-lg);
   font-size: var(--font-size-lg);
-  color: var(--color-slate-600);
+  color: rgba(255, 255, 255, 0.9);
 }
 
 .hero-phone a,
-.cta-phone a,
+.cta-phone a {
+  color: #ffffff;
+  font-weight: 700;
+  text-decoration: underline;
+  transition: opacity var(--transition);
+}
+
+.hero-phone a:hover,
+.cta-phone a:hover {
+  opacity: 0.85;
+}
+
 .call-option a {
   color: var(--color-primary);
   font-weight: 600;
@@ -212,8 +223,6 @@ a:hover {
   transition: color var(--transition);
 }
 
-.hero-phone a:hover,
-.cta-phone a:hover,
 .call-option a:hover {
   color: var(--color-primary-dark);
   text-decoration: underline;

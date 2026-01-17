@@ -12,9 +12,9 @@ export default function EnterprisePage() {
   return (
     <main className="page-container">
       <div className="page-header">
-        <h1>Commercial & Industrial Wildlife Exclusion Assessment</h1>
+        <h1>Request a Facility Assessment</h1>
         <p>
-          Facilities facing wildlife challenges need compliance-ready solutions. We coordinate comprehensive assessments with licensed vertebrate pest management specialists who understand USDA, FDA, and health code requirements. From warehouses and manufacturing to food service and municipal facilities, our network provides expert guidance on structural prevention, rodent exclusion, and bird control systems.
+          We coordinate comprehensive exclusion and prevention projects with licensed specialists. Our team will assess your facility and scope work with qualified partners in your region. Call if you'd prefer to chat now - <PhoneLink />
         </p>
       </div>
 

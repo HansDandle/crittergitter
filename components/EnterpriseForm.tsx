@@ -189,12 +189,6 @@ export const EnterpriseForm: React.FC<EnterpriseFormProps> = ({ onSuccess }) => 
 
   return (
     <form onSubmit={handleSubmit} className="enterprise-form">
-      <h2>Request a Facility Assessment</h2>
-      <p className="form-note">
-        We coordinate comprehensive exclusion and prevention projects with licensed specialists.
-        Our team will assess your facility and scope work with qualified partners in your region.
-      </p>
-
       {message && <div className={`form-message ${errors._general ? 'error' : 'success'}`}>{message}</div>}
 
       <fieldset>

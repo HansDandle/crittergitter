@@ -159,11 +159,6 @@ export const ResidentialForm: React.FC<ResidentialFormProps> = ({ onSuccess }) =
 
   return (
     <form onSubmit={handleSubmit} className="residential-form">
-      <h2>Request an Assessment</h2>
-      <p className="form-note">
-        We connect you with licensed professionals. Services are provided by independent specialists in your area.
-      </p>
-
       {message && <div className={`form-message ${errors._general ? 'error' : 'success'}`}>{message}</div>}
 
       <fieldset>

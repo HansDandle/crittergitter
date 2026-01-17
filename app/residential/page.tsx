@@ -12,9 +12,9 @@ export default function ResidentialPage() {
   return (
     <main className="page-container">
       <div className="page-header">
-        <h1>Residential Animal Removal & Exclusion Assessment</h1>
+        <h1>Request a Home Assessment</h1>
         <p>
-          If you're experiencing wildlife in your home or on your property, we coordinate assessments with licensed animal removal and wildlife exclusion specialists. Describe your situation and we'll match you with qualified professionals to evaluate your property and discuss solutions.
+          We coordinate wildlife removal and exclusion with licensed specialists in your area. Describe your situation below and we'll match you with qualified professionals. Call if you'd prefer to chat now - <PhoneLink />
         </p>
       </div>
 
