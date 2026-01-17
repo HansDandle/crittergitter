@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import './globals.css';
-import React from 'react';
+import { PhoneLink } from '@/components/PhoneLink';
 
 export const metadata: Metadata = {
   title: 'SiteShield - Wildlife Exclusion Referrals',
@@ -104,7 +104,7 @@ export default function RootLayout({
             <div className="footer-section">
               <h4>Contact</h4>
               <p>Email: info@siteshield.com</p>
-              <p>Phone: [Your Phone]</p>
+              <p>Phone: <PhoneLink /></p>
             </div>
           </div>
 

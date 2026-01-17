@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import Image from 'next/image';
-import React from 'react';
+import { PhoneLink } from '@/components/PhoneLink';
 
 export const metadata: Metadata = {
   title: 'Wildlife Exclusion & Pest Prevention | Professional Network',
@@ -26,6 +26,9 @@ export default function HomePage() {
               Enterprise Assessment
             </Link>
           </div>
+          <p className="hero-phone">
+            Prefer to talk? Call us: <PhoneLink />
+          </p>
         </div>
         <div style={{ marginTop: '2rem' }}>
           <Image
@@ -140,6 +143,9 @@ export default function HomePage() {
               Enterprise Assessment
             </Link>
           </div>
+          <p className="cta-phone">
+            Or call us directly: <PhoneLink />
+          </p>
         </section>
       </main>
     </>

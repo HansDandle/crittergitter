@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { ResidentialForm } from '@/components/ResidentialForm';
-import React from 'react';
+import { PhoneLink } from '@/components/PhoneLink';
 
 export const metadata: Metadata = {
   title: 'Animal Removal & Residential Wildlife Exclusion Assessment',
@@ -52,6 +52,9 @@ export default function ResidentialPage() {
           <div className="compliance-note">
             <p>
               <strong>Our Role:</strong> We coordinate with licensed, independent wildlife specialists. All animal removal, exclusion, and pest prevention services are provided by licensed professionals—not by us. Each specialist maintains their own licensing, insurance, and qualifications.
+            </p>
+            <p className="call-option">
+              <strong>Prefer to call?</strong> Reach us at <PhoneLink />
             </p>
           </div>
         </aside>

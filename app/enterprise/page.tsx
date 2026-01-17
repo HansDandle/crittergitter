@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import { EnterpriseForm } from '@/components/EnterpriseForm';
-import React from 'react';
+import { PhoneLink } from '@/components/PhoneLink';
 
 export const metadata: Metadata = {
   title: 'Commercial Wildlife Exclusion & Facility Prevention Assessment',
@@ -64,6 +64,9 @@ export default function EnterprisePage() {
           <div className="compliance-note">
             <p>
               <strong>Critical Disclosure:</strong> We are a coordination platform only. All wildlife exclusion, vertebrate pest management, facility assessment, and prevention services are delivered by independent, licensed wildlife control specialists. We do not perform services directly. Each licensed partner maintains their own professional licensing, insurance, and regulatory compliance.
+            </p>
+            <p className="call-option">
+              <strong>Prefer to call?</strong> Reach us at <PhoneLink />
             </p>
           </div>
         </aside>
