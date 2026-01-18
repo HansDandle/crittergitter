@@ -15,7 +15,7 @@ export const metadata = {
 };
 
 export default function ServiceAreas() {
-  const coreAreas = [
+  const areas = [
     { name: 'Austin', description: 'Capital city and metro core' },
     { name: 'Round Rock', description: 'North metro technology hub' },
     { name: 'Cedar Park', description: 'Northwest Austin suburbs' },
@@ -23,10 +23,8 @@ export default function ServiceAreas() {
     { name: 'Leander', description: 'North central communities' },
     { name: 'Kyle', description: 'South Austin expanding area' },
     { name: 'Buda', description: 'Southeast suburbs' },
-  ];
-
-  const expandedAreas = [
-    { name: 'Dripping Springs', description: 'West Lake Hills watershed' },
+    { name: 'Dripping Springs', description: 'Gateway to the Hill Country' },
+    { name: 'Del Valle', description: 'Southeast Austin area' },
     { name: 'Blanco', description: 'North central Hill Country' },
     { name: 'Lockhart', description: 'South Central Texas' },
     { name: 'Bastrop', description: 'East central region' },
@@ -57,32 +55,17 @@ export default function ServiceAreas() {
 
           <div
             className="service-grid"
-            style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))' }}
-          >
-            {coreAreas.map((area) => (
-              <div key={area.name} className="service-card">
-                <h3>{area.name}</h3>
-                <p>{area.description}</p>
-                <p style={{ fontSize: '0.875rem', color: 'var(--color-slate-500)', marginTop: 'var(--spacing-md)' }}>
-                  ✓ Residential | ✓ Commercial | ✓ Enterprise
-                </p>
-              </div>
-            ))}
-          </div>
-
-          <h2 style={{ marginTop: 'var(--spacing-3xl)' }}>Expanded Coverage Areas</h2>
-          <p>
-            Beyond the Austin core, we've established partnerships with licensed specialists throughout Central Texas. Our 50-mile coverage area ensures we can connect you with qualified professionals wherever you're located in the region.
-          </p>
-
-          <div
-            className="service-grid"
             style={{ gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))' }}
           >
-            {expandedAreas.map((area) => (
+            {areas.map((area) => (
               <div key={area.name} className="service-card">
                 <h3>{area.name}</h3>
                 <p>{area.description}</p>
+                <ul className="service-features" aria-hidden>
+                  <li>Residential</li>
+                  <li>Commercial</li>
+                  <li>Enterprise</li>
+                </ul>
               </div>
             ))}
           </div>

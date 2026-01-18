@@ -165,7 +165,7 @@ a:hover {
 .hero {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
   color: white;
-  padding: var(--spacing-3xl) var(--spacing-xl);
+  padding: var(--spacing-2xl) var(--spacing-xl) var(--spacing-xl);
   text-align: center;
   border-radius: var(--border-radius-2xl);
   margin: -var(--spacing-xl) -var(--spacing-xl) var(--spacing-3xl) -var(--spacing-xl);
@@ -214,6 +214,53 @@ a:hover {
 .hero-phone a:hover,
 .cta-phone a:hover {
   opacity: 0.85;
+}
+
+/* Hero Image Grid */
+.hero-images {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-xl);
+  height: 280px;
+}
+
+.hero-image-main {
+  height: 100%;
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+}
+
+.hero-image-side {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  height: 100%;
+}
+
+.hero-image-side img {
+  flex: 1;
+  min-height: 0;
+}
+
+@media (max-width: 768px) {
+  .hero-images {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .hero-image-main {
+    height: 180px;
+  }
+
+  .hero-image-side {
+    flex-direction: row;
+    height: 100px;
+  }
+
+  .hero-image-side img {
+    height: 100%;
+  }
 }
 
 .call-option a {
@@ -556,6 +603,19 @@ legend {
   margin-right: auto;
 }
 
+/* translucent overlay behind how-it-works heading & intro */
+.how-overlay {
+  display: block;
+  max-width: 900px;
+  margin: 0 auto var(--spacing-lg);
+  background-color: rgba(255,255,255,0.92);
+  color: var(--color-slate-900);
+  padding: var(--spacing-lg) var(--spacing-2xl);
+  border-radius: var(--border-radius-lg);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+  backdrop-filter: blur(4px);
+}
+
 .steps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
@@ -600,7 +660,9 @@ legend {
 
 /* Service Areas */
 .service-areas {
-  margin: var(--spacing-3xl) 0;
+  margin: calc(var(--spacing-5xl, 4rem) + 2rem) 0  ;
+  position: relative;
+  z-index: 1;
 }
 
 .service-areas h2 {
@@ -619,7 +681,8 @@ legend {
   background: white;
   border: 2px solid var(--color-slate-200);
   border-radius: var(--border-radius-xl);
-  padding: var(--spacing-2xl);
+  padding: var(--spacing-lg) var(--spacing-xl);
+  text-align: left;
   transition: all var(--transition-slow);
   box-shadow: var(--shadow);
 }
@@ -632,7 +695,7 @@ legend {
 
 .service-card h3 {
   color: var(--color-primary);
-  margin-bottom: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
   font-size: var(--font-size-xl);
 }
 
@@ -641,20 +704,48 @@ legend {
 }
 
 .service-card ul li {
-  padding: var(--spacing-sm) 0;
+  padding: var(--spacing-xs) 0;
   padding-left: var(--spacing-lg);
   position: relative;
   color: var(--color-slate-600);
-  line-height: 1.6;
+  line-height: 1.4;
 }
 
-.service-card ul li:before {
-  content: '✓';
-  position: absolute;
-  left: 0;
-  color: var(--color-primary);
-  font-weight: bold;
+/* service-features: show check icons and spacing for service types */
+.service-features {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  list-style: none;
+  padding: 0;
+  margin: var(--spacing-sm) 0 0;
+  color: var(--color-slate-600);
+  font-size: 0.95rem;
+  align-items: flex-start;
 }
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+  margin: 0;
+}
+
+.service-features li::before {
+  content: '✔';
+  color: var(--color-primary);
+  font-weight: 700;
+  margin-right: 8px;
+  font-size: 0.95rem;
+}
+
+/* Override generic service-card list padding for the stacked feature list */
+.service-card .service-features li {
+  padding-left: 0;
+}
+
+/* cleaned up: service-card list items now use .service-features for check icons */
 
 /* Features */
 .features {
@@ -679,15 +770,96 @@ legend {
   margin-right: var(--spacing-xs);
 }
 
+/* Bottom Grid - Highlight + CTA side by side */
+.bottom-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--spacing-2xl);
+  margin-top: var(--spacing-3xl);
+}
+
+/* Professional Highlight */
+.professional-highlight {
+  background: linear-gradient(135deg, #f8faf8 0%, #e8f5e9 100%);
+  padding: var(--spacing-2xl);
+  border-radius: var(--border-radius-2xl);
+  border: 1px solid var(--color-primary-light);
+  margin-top: 0;
+}
+
+.professional-highlight h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-2xl);
+  color: var(--color-slate-900);
+}
+
+.highlight-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-xl);
+  align-items: center;
+  text-align: center;
+}
+
+.highlight-image {
+  flex-shrink: 0;
+}
+
+.highlight-image img {
+  width: 280px;
+  height: 280px;
+  object-fit: cover;
+  border: 4px solid var(--color-primary);
+  box-shadow: var(--shadow-lg);
+}
+
+.highlight-text h3 {
+  font-size: var(--font-size-2xl);
+  color: var(--color-slate-900);
+  margin-bottom: var(--spacing-xs);
+}
+
+.highlight-title {
+  font-size: var(--font-size-lg);
+  color: var(--color-primary);
+  font-weight: 600;
+  margin-bottom: var(--spacing-lg) !important;
+}
+
+.highlight-text p {
+  color: var(--color-slate-600);
+  line-height: 1.7;
+  margin-bottom: var(--spacing-md);
+}
+
+@media (max-width: 768px) {
+  .bottom-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .highlight-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .highlight-image img {
+    width: 200px;
+    height: 200px;
+  }
+}
+
 /* CTA */
 .cta-footer {
   background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
-  padding: var(--spacing-3xl) var(--spacing-xl);
+  padding: var(--spacing-2xl);
   text-align: center;
   border-radius: var(--border-radius-2xl);
-  margin-top: var(--spacing-3xl);
+  margin-top: 0;
   color: white;
   box-shadow: var(--shadow-lg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .cta-footer h2 {
@@ -956,6 +1128,36 @@ legend {
   font-size: var(--font-size-sm);
   border-radius: var(--border-radius);
   color: var(--color-slate-300);
+}
+
+.footer-compliance {
+  grid-column: 1 / -1;
+  background: var(--color-slate-800);
+  padding: var(--spacing-xl);
+  border-radius: var(--border-radius-lg);
+  margin-top: var(--spacing-lg);
+}
+
+.footer-compliance h4 {
+  color: white;
+  margin-bottom: var(--spacing-md);
+  font-size: var(--font-size-lg);
+}
+
+.footer-compliance p {
+  color: var(--color-slate-300);
+  font-size: var(--font-size-sm);
+  margin-bottom: var(--spacing-sm);
+  line-height: 1.6;
+}
+
+.footer-compliance a {
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.footer-compliance a:hover {
+  text-decoration: underline;
 }
 
 .footer-bottom {
